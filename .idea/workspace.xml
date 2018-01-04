@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b214274-17b3-4979-8b90-480009041928" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/javaPanelStudy/Main.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/javaPanelStudy/Main.class" afterPath="$PROJECT_DIR$/out/production/javaPanelStudy/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
     </list>
     <ignored path="javaPanelStudy.iws" />
@@ -29,8 +29,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+            <state relative-caret-position="81">
+              <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -558,7 +558,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1515031360153</updated>
-      <workItem from="1515031365916" duration="2567000" />
+      <workItem from="1515031365916" duration="3009000" />
     </task>
     <task id="LOCAL-00001" summary="工程初始化">
       <created>1515031431421</created>
@@ -595,11 +595,18 @@
       <option name="project" value="LOCAL" />
       <updated>1515033701730</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="绘制文字">
+      <created>1515033945657</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1515033945657</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2567000" />
+    <option name="totallyTimeSpent" value="3009000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -668,7 +675,8 @@
     <MESSAGE value="继承JPanel初始化窗口" />
     <MESSAGE value="不让窗口缩放，格式化代码" />
     <MESSAGE value="加入paint函数" />
-    <option name="LAST_COMMIT_MESSAGE" value="加入paint函数" />
+    <MESSAGE value="绘制文字" />
+    <option name="LAST_COMMIT_MESSAGE" value="绘制文字" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -681,8 +689,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+        <state relative-caret-position="81">
+          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

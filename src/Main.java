@@ -2,6 +2,9 @@ import javax.swing.*;
 import java.awt.*;
 
 public class Main extends JPanel {
+	private int x = 5;
+	private int y = 5;
+
 	public Main() {
 		setSize(new Dimension(800, 480));
 		setPreferredSize(new Dimension(800, 480));
@@ -12,7 +15,7 @@ public class Main extends JPanel {
 		graphics.setColor(Color.BLACK);
 		graphics.fillRect(0, 0, getWidth(), getHeight());
 		graphics.setColor(Color.WHITE);
-		graphics.drawString("it's a good game", 20, 20);
+		graphics.fillOval(x, y, 20, 20);
 		repaint();
 	}
 
