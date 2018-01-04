@@ -8,6 +8,11 @@ public class Main extends JPanel {
 		setBackground(Color.BLACK);
 	}
 
+	public void paint(Graphics graphics) {
+		graphics.setColor(Color.BLACK);
+		graphics.fillRect(0, 0, getWidth(), getHeight());
+	}
+
 	public static void main(String[] args) {
 		Main game = new Main();
 		JFrame jFrame = new JFrame();
