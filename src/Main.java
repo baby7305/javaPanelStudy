@@ -15,7 +15,7 @@ public class Main extends JPanel implements KeyListener {
 		addKeyListener(this);
 
 		stage = new Stage();
-		player = new Player(200, 200);
+		player = new Player(this,200, 200);
 	}
 
 	@Override
@@ -75,6 +75,10 @@ public class Main extends JPanel implements KeyListener {
 		jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		jFrame.setLocationRelativeTo(null);
 		jFrame.setVisible(true);
+	}
+
+	public Stage getStage(){
+		return stage;
 	}
 
 }

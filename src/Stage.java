@@ -14,4 +14,8 @@ public class Stage {
 		graphics.setColor(Color.WHITE);
 		graphics.fillRect(platform.x, platform.y, platform.width, platform.height);
 	}
+
+	public boolean isTouch(Rectangle entity){
+		return platform.intersects(entity);
+	}
 }
