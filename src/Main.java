@@ -8,8 +8,8 @@ public class Main extends JPanel implements KeyListener {
 	private Player player;
 
 	public Main() {
-		setSize(new Dimension(800, 480));
-		setPreferredSize(new Dimension(800, 480));
+		setSize(new Dimension(800, 600));
+		setPreferredSize(new Dimension(800, 600));
 		setBackground(Color.BLACK);
 		setFocusable(true);
 		addKeyListener(this);
