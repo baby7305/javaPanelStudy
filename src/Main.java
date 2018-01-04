@@ -1,7 +1,9 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 
-public class Main extends JPanel {
+public class Main extends JPanel implements KeyListener{
 	private int x = 5;
 	private int y = 5;
 
@@ -17,6 +19,21 @@ public class Main extends JPanel {
 		graphics.setColor(Color.WHITE);
 		graphics.fillOval(x, y, 20, 20);
 		repaint();
+	}
+
+	@Override
+	public void keyPressed(KeyEvent e) {
+
+	}
+
+	@Override
+	public void keyReleased(KeyEvent e) {
+
+	}
+
+	@Override
+	public void keyTyped(KeyEvent e) {
+
 	}
 
 	public static void main(String[] args) {
