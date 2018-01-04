@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5b214274-17b3-4979-8b90-480009041928" name="Default" comment="画个椭圆">
+    <list default="true" id="5b214274-17b3-4979-8b90-480009041928" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/javaPanelStudy/Main.class" afterPath="$PROJECT_DIR$/out/production/javaPanelStudy/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
@@ -29,8 +29,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="676">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state relative-caret-position="189">
+              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -558,7 +558,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1515031360153</updated>
-      <workItem from="1515031365916" duration="3991000" />
+      <workItem from="1515031365916" duration="4729000" />
     </task>
     <task id="LOCAL-00001" summary="工程初始化">
       <created>1515031431421</created>
@@ -609,11 +609,18 @@
       <option name="project" value="LOCAL" />
       <updated>1515034397842</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="实现KeyListener接口">
+      <created>1515035397082</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1515035397082</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3991000" />
+    <option name="totallyTimeSpent" value="4729000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -684,7 +691,8 @@
     <MESSAGE value="加入paint函数" />
     <MESSAGE value="绘制文字" />
     <MESSAGE value="画个椭圆" />
-    <option name="LAST_COMMIT_MESSAGE" value="画个椭圆" />
+    <MESSAGE value="实现KeyListener接口" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现KeyListener接口" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -697,8 +705,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state relative-caret-position="189">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
