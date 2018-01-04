@@ -29,8 +29,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+            <state relative-caret-position="540">
+              <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -558,7 +558,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1515031360153</updated>
-      <workItem from="1515031365916" duration="4729000" />
+      <workItem from="1515031365916" duration="5007000" />
     </task>
     <task id="LOCAL-00001" summary="工程初始化">
       <created>1515031431421</created>
@@ -616,11 +616,18 @@
       <option name="project" value="LOCAL" />
       <updated>1515035397082</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="键盘控制椭圆移动">
+      <created>1515036116239</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1515036116239</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4729000" />
+    <option name="totallyTimeSpent" value="5007000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -692,7 +699,8 @@
     <MESSAGE value="绘制文字" />
     <MESSAGE value="画个椭圆" />
     <MESSAGE value="实现KeyListener接口" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现KeyListener接口" />
+    <MESSAGE value="键盘控制椭圆移动" />
+    <option name="LAST_COMMIT_MESSAGE" value="键盘控制椭圆移动" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -705,8 +713,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        <state relative-caret-position="540">
+          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

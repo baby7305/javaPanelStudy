@@ -15,6 +15,12 @@ public class Main extends JPanel implements KeyListener {
 		addKeyListener(this);
 	}
 
+	@Override
+	public void update(Graphics g) {
+		super.update(g);
+		paint(g);
+	}
+
 	public void paint(Graphics graphics) {
 		graphics.setColor(Color.BLACK);
 		graphics.fillRect(0, 0, getWidth(), getHeight());
@@ -27,16 +33,16 @@ public class Main extends JPanel implements KeyListener {
 	public void keyPressed(KeyEvent e) {
 		int c = e.getKeyCode();
 		if (c == KeyEvent.VK_W) {
-			y--;
+			y -= 5;
 		}
 		if (c == KeyEvent.VK_S) {
-			y++;
+			y += 5;
 		}
 		if (c == KeyEvent.VK_A) {
-			x--;
+			x -= 5;
 		}
 		if (c == KeyEvent.VK_D) {
-			x++;
+			x += 5;
 		}
 
 
