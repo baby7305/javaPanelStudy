@@ -4,6 +4,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 public class Main extends JPanel implements KeyListener {
+	private Stage stage;
 	private Player player;
 
 	public Main() {
@@ -13,7 +14,8 @@ public class Main extends JPanel implements KeyListener {
 		setFocusable(true);
 		addKeyListener(this);
 
-		player= new Player(200,200);
+		stage = new Stage();
+		player = new Player(200, 200);
 	}
 
 	@Override
@@ -25,9 +27,9 @@ public class Main extends JPanel implements KeyListener {
 	public void paint(Graphics graphics) {
 		graphics.setColor(Color.BLACK);
 		graphics.fillRect(0, 0, getWidth(), getHeight());
+		stage.draw(graphics);
 		player.draw(graphics);
-		graphics.setColor(Color.WHITE);
-		graphics.fillRect(0,400,800,20);
+
 		graphics.dispose();
 		repaint();
 	}
@@ -74,4 +76,5 @@ public class Main extends JPanel implements KeyListener {
 		jFrame.setLocationRelativeTo(null);
 		jFrame.setVisible(true);
 	}
+
 }
