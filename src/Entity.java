@@ -4,11 +4,11 @@ import java.awt.*;
  * Created by Administrator on 2018/1/4.
  */
 public abstract class Entity {
-	private int x;
-	private int y;
-	private int w;
-	private int h;
-	private boolean removed = false;
+	protected int x;
+	protected int y;
+	protected int w;
+	protected int h;
+	protected boolean removed = false;
 
 	public int getX() {
 		return x;

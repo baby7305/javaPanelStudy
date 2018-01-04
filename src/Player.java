@@ -18,10 +18,27 @@ public class Player extends Entity {
 		super.draw(graphics);
 		move();
 		graphics.setColor(Color.ORANGE);
-		graphics.fillOval(this.getX(),this.getY(),this.getW(),this.getH());
+		graphics.fillOval(x, y, w, h);
 	}
 
-	private void move(){
+	private void move() {
+		x += xd;
+		y += yd;
+	}
 
+	public int getXd() {
+		return xd;
+	}
+
+	public void setXd(int xd) {
+		this.xd = xd;
+	}
+
+	public int getYd() {
+		return yd;
+	}
+
+	public void setYd(int yd) {
+		this.yd = yd;
 	}
 }
