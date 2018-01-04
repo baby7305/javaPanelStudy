@@ -11,6 +11,9 @@ public class Main extends JPanel {
 	public void paint(Graphics graphics) {
 		graphics.setColor(Color.BLACK);
 		graphics.fillRect(0, 0, getWidth(), getHeight());
+		graphics.setColor(Color.WHITE);
+		graphics.drawString("it's a good game", 20, 20);
+		repaint();
 	}
 
 	public static void main(String[] args) {
