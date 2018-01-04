@@ -26,6 +26,9 @@ public class Main extends JPanel implements KeyListener {
 		graphics.setColor(Color.BLACK);
 		graphics.fillRect(0, 0, getWidth(), getHeight());
 		player.draw(graphics);
+		graphics.setColor(Color.WHITE);
+		graphics.fillRect(0,400,800,20);
+		graphics.dispose();
 		repaint();
 	}
 
