@@ -23,7 +23,7 @@ public class Enemy extends Entity {
 	public Enemy(Main instance, int x, int y) {
 		super(x, y);
 		this.instance = instance;
-		hitbox = new Rectangle(x, y, 64, 64);
+		hitbox = new Rectangle(x, y, 32, 32);
 		ix = 0;
 		iy = 1;
 		dead = false;

@@ -33,8 +33,6 @@ public class Player extends Entity {
 	private void move() {
 		hitbox.x += xd;
 		hitbox.y += yd;
-//		x += xd;
-//		y += yd;
 	}
 
 	public int getXd() {
