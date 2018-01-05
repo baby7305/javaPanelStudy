@@ -35,7 +35,7 @@ public class EnemyManager {
 			}
 		} else if (ss > 20) {
 			for (int i = 0; i < amount - ss; i++) {
-				enemies.get(0);
+				enemies.remove(i);
 			}
 		}
 	}
