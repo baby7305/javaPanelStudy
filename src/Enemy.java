@@ -6,10 +6,14 @@ import java.awt.*;
 public class Enemy extends Entity {
 	private Rectangle hitbox;
 	private boolean dead;
+	private int ix;
+	private int iy;
+	private Main instance;
 
 
-	public Enemy(int x, int y) {
+	public Enemy(Main instance, int x, int y) {
 		super(x, y);
+		this.instance = instance;
 		hitbox = new Rectangle(x, y, 64, 64);
 	}
 
@@ -19,7 +23,7 @@ public class Enemy extends Entity {
 		graphics.fillRect(hitbox.x, hitbox.y, hitbox.width, hitbox.height);
 	}
 
-	private void move(){
+	private void move() {
 
 	}
 }
