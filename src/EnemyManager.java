@@ -19,6 +19,7 @@ public class EnemyManager {
 	}
 
 	public void draw(Graphics graphics) {
+		update();
 		for (Enemy enemy : enemies) {
 			enemy.draw(graphics);
 		}
@@ -37,5 +38,20 @@ public class EnemyManager {
 				enemies.get(0);
 			}
 		}
+	}
+
+	private void update() {
+		boolean remove = false;
+		for (int i = 0; i < enemies.size(); i++) {
+			if (enemies.get(i).isDead()) {
+				enemies.remove(i);
+				remove = true;
+			}
+		}
+
+		if (remove) {
+			spawn();
+		}
+
 	}
 }
