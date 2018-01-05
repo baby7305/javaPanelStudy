@@ -6,6 +6,7 @@ import java.awt.event.KeyListener;
 public class Main extends JPanel implements KeyListener {
 	private Stage stage;
 	private Player player;
+	private Enemy enemy;
 
 	public Main() {
 		setSize(new Dimension(800, 600));
@@ -15,7 +16,8 @@ public class Main extends JPanel implements KeyListener {
 		addKeyListener(this);
 
 		stage = new Stage();
-		player = new Player(this,200, 200);
+		player = new Player(this, 200, 200);
+		enemy = new Enemy(this, 20, 20);
 	}
 
 	@Override
@@ -29,6 +31,7 @@ public class Main extends JPanel implements KeyListener {
 		graphics.fillRect(0, 0, getWidth(), getHeight());
 		stage.draw(graphics);
 		player.draw(graphics);
+		enemy.draw(graphics);
 
 		graphics.dispose();
 		repaint();
@@ -77,7 +80,7 @@ public class Main extends JPanel implements KeyListener {
 		jFrame.setVisible(true);
 	}
 
-	public Stage getStage(){
+	public Stage getStage() {
 		return stage;
 	}
 

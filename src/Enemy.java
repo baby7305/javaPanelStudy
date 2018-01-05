@@ -5,7 +5,7 @@ import java.awt.*;
  */
 public class Enemy extends Entity {
 	private Rectangle hitbox;
-	private boolean dead;
+	private boolean dead = false;
 	private int ix;
 	private int iy;
 	private Main instance;
@@ -15,6 +15,8 @@ public class Enemy extends Entity {
 		super(x, y);
 		this.instance = instance;
 		hitbox = new Rectangle(x, y, 64, 64);
+		ix = 0;
+		iy = 1;
 	}
 
 	public void draw(Graphics graphics) {
@@ -24,6 +26,12 @@ public class Enemy extends Entity {
 	}
 
 	private void move() {
+		if (instance.getStage().isTouch(hitbox)) {
+			iy = 0;
+			dead = true;
+		}
+		hitbox.x += ix;
+		hitbox.y += iy;
 
 	}
 }
