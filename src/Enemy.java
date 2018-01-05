@@ -5,9 +5,18 @@ import java.awt.*;
  */
 public class Enemy extends Entity {
 	private Rectangle hitbox;
-	private boolean dead = false;
+	private boolean dead;
 	private int ix;
 	private int iy;
+
+	public boolean isDead() {
+		return dead;
+	}
+
+	public void setDead(boolean dead) {
+		this.dead = dead;
+	}
+
 	private Main instance;
 
 
@@ -17,6 +26,7 @@ public class Enemy extends Entity {
 		hitbox = new Rectangle(x, y, 64, 64);
 		ix = 0;
 		iy = 1;
+		dead = false;
 	}
 
 	public void draw(Graphics graphics) {

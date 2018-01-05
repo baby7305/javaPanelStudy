@@ -8,7 +8,7 @@ public abstract class Entity {
 	protected int y;
 	protected int w;
 	protected int h;
-	protected boolean removed = false;
+	protected boolean removed;
 
 	public int getX() {
 		return x;
@@ -54,6 +54,7 @@ public abstract class Entity {
 	public Entity(int x, int y) {
 		this.x = x;
 		this.y = y;
+		removed = false;
 	}
 
 	public void draw(Graphics graphics) {
