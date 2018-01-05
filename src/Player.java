@@ -8,6 +8,7 @@ public class Player extends Entity {
 	private int yd;
 	private Main instance;
 	private Rectangle hitbox;
+	private int life = 3;
 
 	public Player(Main instance, int x, int y) {
 		super(x, y);
@@ -23,6 +24,8 @@ public class Player extends Entity {
 		move();
 		graphics.setColor(Color.ORANGE);
 		graphics.fillOval(hitbox.x, hitbox.y, hitbox.width, hitbox.height);
+		graphics.setColor(Color.WHITE);
+		graphics.drawString("Life/lives:" + life, 20, 20);
 	}
 
 	private void move() {
@@ -33,6 +36,15 @@ public class Player extends Entity {
 		}
 		hitbox.x += xd;
 		hitbox.y += yd;
+		if (instance.getEnemyManager().isColliding(hitbox)) {
+			if (life > 0) {
+				life--;
+				hitbox.x = 800 / 2 - w / 2;
+				y = 400;
+			} else {
+				instance.setGameOver(true);
+			}
+		}
 	}
 
 	public int getXd() {

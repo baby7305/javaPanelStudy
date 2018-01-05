@@ -7,6 +7,7 @@ public class Main extends JPanel implements KeyListener {
 	private Stage stage;
 	private Player player;
 	private EnemyManager enemyManager;
+	private boolean isGameOver;
 
 	public Main() {
 		setSize(new Dimension(800, 600));
@@ -17,7 +18,8 @@ public class Main extends JPanel implements KeyListener {
 
 		stage = new Stage();
 		player = new Player(this, 200, 200);
-		enemyManager=new EnemyManager(this,10);
+		enemyManager = new EnemyManager(this, 10);
+		isGameOver = false;
 	}
 
 	@Override
@@ -30,8 +32,14 @@ public class Main extends JPanel implements KeyListener {
 		graphics.setColor(Color.BLACK);
 		graphics.fillRect(0, 0, getWidth(), getHeight());
 		stage.draw(graphics);
-		player.draw(graphics);
-		enemyManager.draw(graphics);
+		if (!isGameOver) {
+			player.draw(graphics);
+			enemyManager.draw(graphics);
+		} else {
+			graphics.setFont(new Font("Century Gothic", Font.BOLD, 24));
+			graphics.drawString("Game Over", 350, 200);
+		}
+
 
 		graphics.dispose();
 		repaint();
@@ -82,6 +90,14 @@ public class Main extends JPanel implements KeyListener {
 
 	public Stage getStage() {
 		return stage;
+	}
+
+	public EnemyManager getEnemyManager() {
+		return enemyManager;
+	}
+
+	public void setGameOver(boolean flag) {
+		isGameOver = flag;
 	}
 
 }
