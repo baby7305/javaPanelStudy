@@ -7,7 +7,7 @@ public class Stage {
 	private Rectangle platform;
 
 	public Stage() {
-		platform = new Rectangle(0, 540, 800, 20);
+		platform = new Rectangle(0, 540, 800, 60);
 	}
 
 	public void draw(Graphics graphics) {
