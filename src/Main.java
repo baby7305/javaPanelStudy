@@ -7,6 +7,7 @@ public class Main extends JPanel implements KeyListener {
 	private Stage stage;
 	private Player player;
 	private Enemy enemy;
+	private EnemyManager enemyManager;
 
 	public Main() {
 		setSize(new Dimension(800, 600));
@@ -18,6 +19,7 @@ public class Main extends JPanel implements KeyListener {
 		stage = new Stage();
 		player = new Player(this, 200, 200);
 		enemy = new Enemy(this, 20, 20);
+		enemyManager=new EnemyManager(this,10);
 	}
 
 	@Override
@@ -32,6 +34,7 @@ public class Main extends JPanel implements KeyListener {
 		stage.draw(graphics);
 		player.draw(graphics);
 		enemy.draw(graphics);
+		enemyManager.draw(graphics);
 
 		graphics.dispose();
 		repaint();
