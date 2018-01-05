@@ -21,16 +21,16 @@ public class Player extends Entity {
 	public void draw(Graphics graphics) {
 		super.draw(graphics);
 		move();
-		if (!instance.getStage().isTouch(hitbox)) {
-			yd = 1;
-		} else {
-			yd = 0;
-		}
 		graphics.setColor(Color.ORANGE);
 		graphics.fillOval(hitbox.x, hitbox.y, hitbox.width, hitbox.height);
 	}
 
 	private void move() {
+		if (!instance.getStage().isTouch(hitbox)) {
+			yd = 1;
+		} else {
+			yd = 0;
+		}
 		hitbox.x += xd;
 		hitbox.y += yd;
 	}

@@ -20,6 +20,14 @@ public class Enemy extends Entity {
 	private Main instance;
 
 
+	public Rectangle getHitbox() {
+		return hitbox;
+	}
+
+	public void setHitbox(Rectangle hitbox) {
+		this.hitbox = hitbox;
+	}
+
 	public Enemy(Main instance, int x, int y) {
 		super(x, y);
 		this.instance = instance;

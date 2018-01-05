@@ -31,7 +31,7 @@ public class EnemyManager {
 		int ss = enemies.size();
 		if (ss < 20) {
 			for (int i = 0; i < amount - ss; i++) {
-				enemies.add(new Enemy(instance, random.nextInt(778), 10));
+				enemies.add(new Enemy(instance, random.nextInt(778), random.nextInt(100)));
 			}
 		} else if (ss > 20) {
 			for (int i = 0; i < amount - ss; i++) {
@@ -52,6 +52,17 @@ public class EnemyManager {
 		if (remove) {
 			spawn();
 		}
+
+	}
+
+	public boolean isColliding(Rectangle hitbox) {
+		boolean c = false;
+		for (int i = 0; i < enemies.size(); i++) {
+			if (hitbox.intersects(enemies.get(i).getHitbox())) {
+				c = true;
+			}
+		}
+		return c;
 
 	}
 }
